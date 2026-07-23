@@ -1,0 +1,37 @@
+[
+  {
+    "id": "multilingual-minilm",
+    "display_name": "Multilingual MiniLM",
+    "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "provider": "sentence-transformers",
+    "strategy": "default",
+    "dimension": 384,
+    "enabled": true,
+    "recommended_for": "Fast local baseline and early development.",
+    "notes": "Small and practical, but not the strongest retrieval model."
+  },
+  {
+    "id": "multilingual-mpnet",
+    "display_name": "Multilingual MPNet",
+    "model_name": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "provider": "sentence-transformers",
+    "strategy": "default",
+    "dimension": 768,
+    "enabled": true,
+    "recommended_for": "Stronger multilingual semantic similarity baseline.",
+    "notes": "Good candidate for cross-lingual retrieval experiments."
+  },
+  {
+    "id": "multilingual-e5-large",
+    "display_name": "Multilingual E5 Large",
+    "model_name": "intfloat/multilingual-e5-large",
+    "provider": "sentence-transformers",
+    "strategy": "e5",
+    "dimension": 1024,
+    "enabled": true,
+    "query_prefix": "query: ",
+    "document_prefix": "passage: ",
+    "recommended_for": "High-quality multilingual retrieval evaluation.",
+    "notes": "Requires query/passsage prefixes and is heavier than MPNet."
+  }
+]

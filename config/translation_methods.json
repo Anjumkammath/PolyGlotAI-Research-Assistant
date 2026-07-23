@@ -1,0 +1,29 @@
+[
+  {
+    "id": "google",
+    "display_name": "Google Translate",
+    "provider": "deep-translator",
+    "enabled": true,
+    "requires_model_download": false,
+    "best_for": "Fast general-purpose translation during local development.",
+    "notes": "Uses deep-translator. Quality can vary for technical text."
+  },
+  {
+    "id": "llm",
+    "display_name": "LLM Translation",
+    "provider": "configured-llm",
+    "enabled": true,
+    "requires_model_download": false,
+    "best_for": "Context-aware translation, technical explanations, and bilingual study notes.",
+    "notes": "Uses the configured OpenAI or Ollama provider."
+  },
+  {
+    "id": "nllb",
+    "display_name": "NLLB-200",
+    "provider": "facebook/nllb-200-distilled-600M",
+    "enabled": true,
+    "requires_model_download": true,
+    "best_for": "Dedicated machine translation comparison across many languages.",
+    "notes": "Loads lazily only when selected. First run may download the model."
+  }
+]

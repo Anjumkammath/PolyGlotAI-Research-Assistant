@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic-settings
+pypdf
+qdrant-client
+sentence-transformers
+sentencepiece
+deep-translator
+requests
+openai
+sudachipy
+sudachidict_core

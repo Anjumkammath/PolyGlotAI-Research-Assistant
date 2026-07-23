@@ -1,0 +1,118 @@
+{
+  "priority_languages": [
+    {
+      "code": "ml",
+      "priority_reason": "Home-language comfort for Malayalam-speaking users and useful for regional research access."
+    },
+    {
+      "code": "hi",
+      "priority_reason": "High-impact Indian language for broad academic accessibility."
+    },
+    {
+      "code": "ta",
+      "priority_reason": "Major South Indian language and important for multilingual Indian NLP coverage."
+    },
+    {
+      "code": "kn",
+      "priority_reason": "Major South Indian language and useful for validating Indic script handling."
+    },
+    {
+      "code": "ja",
+      "priority_reason": "Critical for Japan master's preparation and Japanese research-paper reading."
+    },
+    {
+      "code": "ko",
+      "priority_reason": "East Asian language with non-Latin script and strong NLP/research relevance."
+    },
+    {
+      "code": "fr",
+      "priority_reason": "Globally common academic language and useful for European research access."
+    },
+    {
+      "code": "es",
+      "priority_reason": "Globally common language with large user base and strong translation baseline."
+    }
+  ],
+  "cases": [
+    {
+      "id": "translation-technical-terms",
+      "category": "translation",
+      "source_language": "en",
+      "target_language": "ml",
+      "source_text": "The RAG system retrieves source passages before generating a cited answer.",
+      "prompt": "Translate this sentence while preserving the technical terms RAG and cited answer.",
+      "expected_terms": ["RAG", "source", "citation"],
+      "notes": "Checks whether technical terminology is preserved instead of over-translated."
+    },
+    {
+      "id": "translation-research-summary",
+      "category": "translation",
+      "source_language": "en",
+      "target_language": "hi",
+      "source_text": "The paper compares multilingual embeddings for cross-lingual retrieval.",
+      "prompt": "Translate this into Hindi and keep multilingual embeddings and retrieval understandable.",
+      "expected_terms": ["multilingual", "embeddings", "retrieval"],
+      "notes": "Good smoke test for AI/NLP vocabulary in an Indian language."
+    },
+    {
+      "id": "rag-tamil-query",
+      "category": "rag",
+      "source_language": "ta",
+      "target_language": "en",
+      "source_text": "What problem does the paper solve, and what evidence supports it?",
+      "prompt": "Ask this question in Tamil against an English paper and verify the retrieved chunks are relevant.",
+      "expected_terms": ["problem", "evidence", "citation"],
+      "notes": "Manual cross-lingual retrieval check for Tamil query to English document chunks."
+    },
+    {
+      "id": "rag-kannada-query",
+      "category": "rag",
+      "source_language": "kn",
+      "target_language": "en",
+      "source_text": "Explain the method and limitations of the paper.",
+      "prompt": "Ask this question in Kannada and confirm the assistant cites method and limitation passages.",
+      "expected_terms": ["method", "limitations", "citation"],
+      "notes": "Manual cross-lingual retrieval check for Kannada query to English document chunks."
+    },
+    {
+      "id": "japanese-tokenization",
+      "category": "chunking",
+      "source_language": "ja",
+      "target_language": "en",
+      "source_text": "Japanese research text does not always separate words with spaces.",
+      "prompt": "Upload or paste Japanese text and verify the tokenizer strategy is sudachipy.",
+      "expected_terms": ["sudachipy", "chunking", "Japanese"],
+      "notes": "Confirms Japanese is handled with a Japanese-aware strategy, not naive whitespace splitting."
+    },
+    {
+      "id": "korean-cjk-retrieval",
+      "category": "rag",
+      "source_language": "ko",
+      "target_language": "en",
+      "source_text": "Summarize the model architecture and dataset.",
+      "prompt": "Ask this question in Korean and verify the source passages mention architecture and dataset.",
+      "expected_terms": ["architecture", "dataset", "citation"],
+      "notes": "Checks CJK-style chunking and multilingual retrieval behavior for Korean."
+    },
+    {
+      "id": "french-answer-style",
+      "category": "answer_quality",
+      "source_language": "en",
+      "target_language": "fr",
+      "source_text": "Give a beginner-friendly explanation of the paper's main contribution.",
+      "prompt": "Ask for a beginner-friendly French answer and verify citations remain visible.",
+      "expected_terms": ["beginner", "main contribution", "citation"],
+      "notes": "Checks answer style control plus target-language output."
+    },
+    {
+      "id": "spanish-citation-integrity",
+      "category": "citation",
+      "source_language": "en",
+      "target_language": "es",
+      "source_text": "Explain the results and cite every claim.",
+      "prompt": "Ask for a Spanish answer and verify each factual claim has a visible citation.",
+      "expected_terms": ["results", "citation", "claim"],
+      "notes": "Checks that translation does not remove citation markers."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "en": {
+    "google": "en",
+    "nllb": "eng_Latn"
+  },
+  "ml": {
+    "google": "ml",
+    "nllb": "mal_Mlym"
+  },
+  "hi": {
+    "google": "hi",
+    "nllb": "hin_Deva"
+  },
+  "ja": {
+    "google": "ja",
+    "nllb": "jpn_Jpan"
+  },
+  "ta": {
+    "google": "ta",
+    "nllb": "tam_Taml"
+  },
+  "te": {
+    "google": "te",
+    "nllb": "tel_Telu"
+  },
+  "kn": {
+    "google": "kn",
+    "nllb": "kan_Knda"
+  },
+  "bn": {
+    "google": "bn",
+    "nllb": "ben_Beng"
+  },
+  "mr": {
+    "google": "mr",
+    "nllb": "mar_Deva"
+  },
+  "gu": {
+    "google": "gu",
+    "nllb": "guj_Gujr"
+  },
+  "pa": {
+    "google": "pa",
+    "nllb": "pan_Guru"
+  },
+  "ur": {
+    "google": "ur",
+    "nllb": "urd_Arab"
+  },
+  "or": {
+    "google": "or",
+    "nllb": "ory_Orya"
+  },
+  "as": {
+    "google": "as",
+    "nllb": "asm_Beng"
+  },
+  "ko": {
+    "google": "ko",
+    "nllb": "kor_Hang"
+  },
+  "zh-CN": {
+    "google": "zh-CN",
+    "nllb": "zho_Hans"
+  },
+  "id": {
+    "google": "id",
+    "nllb": "ind_Latn"
+  },
+  "th": {
+    "google": "th",
+    "nllb": "tha_Thai"
+  },
+  "vi": {
+    "google": "vi",
+    "nllb": "vie_Latn"
+  },
+  "ar": {
+    "google": "ar",
+    "nllb": "arb_Arab"
+  },
+  "es": {
+    "google": "es",
+    "nllb": "spa_Latn"
+  },
+  "fr": {
+    "google": "fr",
+    "nllb": "fra_Latn"
+  },
+  "de": {
+    "google": "de",
+    "nllb": "deu_Latn"
+  },
+  "pt": {
+    "google": "pt",
+    "nllb": "por_Latn"
+  },
+  "ru": {
+    "google": "ru",
+    "nllb": "rus_Cyrl"
+  },
+  "it": {
+    "google": "it",
+    "nllb": "ita_Latn"
+  },
+  "tr": {
+    "google": "tr",
+    "nllb": "tur_Latn"
+  },
+  "fa": {
+    "google": "fa",
+    "nllb": "pes_Arab"
+  }
+}
